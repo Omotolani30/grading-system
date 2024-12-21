@@ -7,10 +7,16 @@ body {
 }
 
 header {
-    background-color: #4A90E2;
     color: white;
     text-align: center;
     padding: 50px 20px;
+}
+.header1{
+    background-color: #edc542;
+    /* background-color: #FFD54F; */
+}
+.header2 {
+    background-color: #4A90E2;  
 }
 
 h1 {
