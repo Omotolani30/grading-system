@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(237, 233, 228);
+}
+
+.hero {
+    padding: 0px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* hero-content styling */
+.hero-header {
+    font-family: "Merriweather", serif;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.hero-subtext {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 16px 64px;
+}
+
+.hero-subtext p {
+    line-height: 1.6;
+}
+
+/* hero-btn styling */
+.cta {
+    border: none;
+    background-color: purple;
+    padding: 12px 24px;
+    border-radius: 10px;
+    margin-top: 28px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cta a {
+    color: white;
+    text-decoration: none;
+}
+
+.cta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Grade clasification */
+.grade-section {
+    background-color: white;
+    padding: 48px 16px;
+}
+
+.grade-header {
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Cards Container */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 48px 32px;
+    font-family: 'Lato', sans-serif;
+    flex-wrap: wrap;  /* Allows wrapping of cards on smaller screens */
+}
+
+/* Individual Card Styling */
+.card1 {
+    background-color: #FFD54F;
+}
+
+.card2 {
+    background-color: #4A90E2;
+}
+
+.card3 {
+    background-color: #66CDAA;
+}
+
+.card {
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px 24px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+}
+
+.card h2 {
+    font-weight: 400;
+}
+
+.card p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    .card-img {
+        transform: perspective(500px) rotateX(20deg) rotateY(20deg);
+    }
+}
+
+.card:active {
+    transform: translateY(0);
+}
+
+.card:focus {
+    outline: 2px solid #4A90E2;
+}
+
+/* Card Image Styling */
+.card-img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    margin: 16px 0;
+    align-self: center;
+}
+
+/* Card Button Styling */
+.card-btn {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    margin-top: 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: center;
+}
+
+.card-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.card-btn:hover {
+    transform: translateX(-5px);
+}
+
+
+/* Feedback */
+.feedback-section {
+    background-color: #f9f9f9;
+    padding: 48px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    font-family: "Merriweather", serif;
+}
+
+.section-description {
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: #666;
+    font-family: "Lato", sans-serif;
+}
+
+.feedback-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: "Lato", sans-serif;
+}
+
+.feedback-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(210, 205, 205, 0.808);
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+.submit-button {
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #357ABD;
+}
+
+
+
+/* For tablets */
+@media (max-width: 768px){
+    .hero-header {
+        font-size: 3rem;
+    }
+
+    .hero-subtext p{
+        line-height: 1.5;
+    }
+
+    .cta{
+        margin-top: 20px;
+    }
+
+
+    .cards {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card {
+        width: 32%;
+        word-wrap: break-word;
+    }
+}
+
+
+
+/* For phones */
+@media (max-width: 480px){
+    .hero-header {
+        line-height: 1.2;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    .hero-subtext {
+        display: none;
+    }
+
+
+    .grade-header {
+        font-size: 1.8rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .card {
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .card-header {
+        font-size: 1.2rem;
+    } 
+}

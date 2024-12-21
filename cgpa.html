@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Classification</title>
+    <link rel="stylesheet" href="cgpa.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>CGPA Classification</h1>
+        <p>Find out if you're on track for first class, second class, or other levels based on your CGPA.</p>
+    </header>
+
+    <!-- CGPA Input Form -->
+    <section class="form-section">
+        <label for="cgpa">Enter Your CGPA:</label>
+        <input type="number" id="cgpa" name="cgpa" step="0.01" min="0" required>
+        <button type="submit" class="btn" onclick="showResult()">Check Classification</button>
+    </section>
+
+    <!-- Classification Result -->
+    <section class="result-section">
+        <h2>Your Classification:</h2>
+        <p id="classification"></p>
+    </section>
+
+    <footer>
+        <p><a href="grade.html">Back to Home</a></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
