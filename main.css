@@ -11,12 +11,24 @@ header {
     text-align: center;
     padding: 50px 20px;
 }
-.header1{
-    background-color: #edc542;
-    /* background-color: #FFD54F; */
+
+/* keyframes for changing headers' colors */
+@keyframes color-change-2x {
+    0% { background: #19dcea; } /* Starting color */
+    100% { background: #b22cff;} /* Ending color */
 }
+
+
+.header1 {
+    animation: color-change-2x 2s linear infinite alternate both;
+}
+
 .header2 {
-    background-color: #4A90E2;  
+    animation: color-change-2x 2s linear infinite alternate 0.5s;
+}
+
+.header3 {
+    animation: color-change-2x 2s linear infinite alternate 1s;
 }
 
 h1 {
@@ -46,6 +58,15 @@ input[type="number"] {
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+
+@keyframes color-change-2x {
+    0% { background: #19dcea; } 100% { background: #b22cff;}
+}
+
+.color-change-2x-alternate { 
+    animation: color-change-2x-alternate 2s linear 0s infinite alternate both; 
 }
 
 button {
