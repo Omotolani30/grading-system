@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CGPA Classification</title>
+    <title>Letter Grades</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <!-- Header Section -->
     <header class="header2">
         <h1>Letter Grades</h1>
-        <p>Convert your marks to A, B, C, or D with ease.</p>
+        <p>Display a grade conversion table and allow users to convert marks to letter grades (A, B, C, etc.).</p>
     </header>
 
     <!-- CGPA Input Form -->
     <section class="form-section">
         <label for="l_grade">Enter Your Grade:</label>
-        <input type="number" id="cgpa" name="cgpa" step="0.01" min="0" required>
-        <button type="submit" class="btn" onclick="showResult()">Check Classification</button>
+        <input type="number" id="l_grade" name="l_grade" min="0" max="100" required>
+        <button type="submit" class="btn" onclick="showLgrade()">Check Classification</button>
     </section>
 
     <!-- Classification Result -->
     <section class="result-section">
         <h2>Your Classification:</h2>
-        <p id="classification"></p>
+        <p id="letter_result"></p>
     </section>
 
     <footer>

@@ -10,10 +10,8 @@ function showResult() {
 
     if (isNaN(userCgpa) || userCgpa < 0 || userCgpa > 5) {
         document.getElementById("classification").innerHTML = `Invalid. Please enter a CGPA between 0 and 5.`;
-        return;
     }
-    
-    
+     
     if (userCgpa <= 0.99) {
         document.getElementById("classification").innerHTML = `Probation &#128078;. Advise to withdraw`;
         songfail.play();
@@ -33,4 +31,19 @@ function showResult() {
         document.getElementById("classification").innerHTML = `Congratulations &#127881;. You got first class.`;
         songfirst.play();
     }
+}
+
+
+
+function showLgrade(){
+    var userGrade = Number(document.getElementById('l_grade')).value;
+
+    if(isNaN(userGrade) || userGrade < 0 || userGrade > 100){
+        document.getElementById("letter_result").innerHTML = `Invalid. Please enter a number between 0 and 100.`;
+    }
+
+    if (userGrade <= ) {
+        
+    }
+    
 }
